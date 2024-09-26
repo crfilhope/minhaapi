@@ -5,9 +5,7 @@ import { tokenValidation } from '../app/middlewares/tokenValidation';
 
 const router = Router();
 
-
 router.use(authMiddleware);
-
 
 router.post('/', tokenValidation, TweetController.store);
 router.get('/', TweetController.index);

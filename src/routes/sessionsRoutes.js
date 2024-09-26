@@ -5,9 +5,6 @@ import SessionController from '../app/controllers/SessionController';
 
 const router = Router();
 
-
-
 router.post('/', loginValidation, SessionController.store);
-
 
 export default router;
