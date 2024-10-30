@@ -4,6 +4,7 @@ class UserController {
   //create
   
   async store (req, res) {
+    
 
     try {
       const novoUser = await User.create(req.body);
